@@ -5,7 +5,7 @@ import pickle
 import os
 import sklearn
 import sys
-print(sys.version)
+print()
 
 model_path = os.path.join(os.path.dirname(__file__), "default_RandomForest_model.pkl")
 # Load the model from the pickle file
@@ -13,6 +13,7 @@ with open(model_path, "rb") as file:
     model = pickle.load(file)
 
 st.title("Health Insurance Premium Price Prediction")
+st.write(sys.version)
 # with st.container(border=True):
 
 
