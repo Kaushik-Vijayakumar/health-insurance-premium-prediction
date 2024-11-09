@@ -1,0 +1,6 @@
+streamlit
+scikit-learn
+pandas
+numpy
+pickle-mixin  # Sometimes needed for pickle compatibility
+requests      # If loading from GitHub
