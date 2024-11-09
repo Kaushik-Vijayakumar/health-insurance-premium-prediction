@@ -5,7 +5,6 @@ import pickle
 import os
 import sklearn
 import sys
-print()
 
 model_path = os.path.join(os.path.dirname(__file__), "default_RandomForest_model.pkl")
 # Load the model from the pickle file
@@ -13,12 +12,8 @@ with open(model_path, "rb") as file:
     model = pickle.load(file)
 
 st.title("Health Insurance Premium Price Prediction")
-st.write(sys.version)
-# with st.container(border=True):
-
 
 st.subheader("Do you have any of the following conditions?")
-# st.divider()
 col1, col2 = st.columns(2)
 with col1:
     diabetes = int(st.toggle("Diabetes", value=0))
@@ -53,7 +48,6 @@ data = {
     "KnownAllergies": [known_allergies],
     "HistoryOfCancerInFamily": [history_of_cancer_in_family],
     "NumberOfMajorSurgeries": [number_of_major_surgeries],
-    # "BMI": [BMI]
 }
 
 df = pd.DataFrame(data)
