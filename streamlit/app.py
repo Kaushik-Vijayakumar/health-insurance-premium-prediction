@@ -4,6 +4,8 @@ import pandas as pd
 import pickle
 import os
 import sklearn
+import sys
+print(sys.version)
 
 model_path = os.path.join(os.path.dirname(__file__), "default_RandomForest_model.pkl")
 # Load the model from the pickle file
