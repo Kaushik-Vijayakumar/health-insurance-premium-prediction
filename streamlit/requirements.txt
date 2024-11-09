@@ -1,6 +1,6 @@
-streamlit
-scikit-learn
-pandas
-numpy
+streamlit==1.40.0
+scikit-learn==1.3.2
+pandas==2.0.2
+numpy==1.24.3
 pickle-mixin  # Sometimes needed for pickle compatibility
-requests      # If loading from GitHub
+requests==2.31.0    # If loading from GitHub
